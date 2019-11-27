@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/fellowships",
+      "handler": "Fellowship.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/fellowships/count",
+      "handler": "Fellowship.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/fellowships/:id",
+      "handler": "Fellowship.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/fellowships",
+      "handler": "Fellowship.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/fellowships/:id",
+      "handler": "Fellowship.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/fellowships/:id",
+      "handler": "Fellowship.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

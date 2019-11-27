@@ -1,0 +1,30 @@
+{
+  "connection": "default",
+  "collectionName": "fellowships",
+  "info": {
+    "name": "fellowship",
+    "description": "12 step fellowship"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "groups": {
+      "collection": "group"
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "longName": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}

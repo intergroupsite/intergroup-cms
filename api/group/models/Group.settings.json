@@ -1,0 +1,38 @@
+{
+  "connection": "default",
+  "collectionName": "groups",
+  "info": {
+    "name": "group",
+    "description": "The core unit of the Intergroup.site CMS. It contains the basic info of a twelve-step group. "
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "contact": {
+      "type": "email"
+    },
+    "categories": {
+      "collection": "category",
+      "via": "groups"
+    },
+    "fellowship": {
+      "model": "fellowship"
+    }
+  }
+}
