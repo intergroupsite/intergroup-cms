@@ -1,0 +1,36 @@
+{
+  "connection": "default",
+  "collectionName": "alerts",
+  "info": {
+    "name": "alert",
+    "description": "Temporary update about a group"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "content": {
+      "type": "text"
+    },
+    "sentiment": {
+      "enum": [
+        "success",
+        "neutral",
+        "warning"
+      ],
+      "type": "enumeration"
+    },
+    "expiration": {
+      "type": "date"
+    },
+    "group": {
+      "model": "group",
+      "via": "alerts"
+    }
+  }
+}
