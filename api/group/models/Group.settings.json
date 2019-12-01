@@ -33,6 +33,10 @@
     },
     "fellowship": {
       "model": "fellowship"
+    },
+    "alerts": {
+      "collection": "alert",
+      "via": "group"
     }
   }
 }
