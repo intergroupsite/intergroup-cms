@@ -34,9 +34,11 @@
     "fellowship": {
       "model": "fellowship"
     },
-    "alerts": {
-      "collection": "alert",
-      "via": "group"
+    "alert": {
+      "maxLength": 300,
+      "default": "alert",
+      "minLength": 20,
+      "type": "string"
     }
   }
 }
