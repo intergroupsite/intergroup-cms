@@ -21,8 +21,8 @@
     },
     "groups": {
       "collection": "group",
-      "via": "categories",
-      "dominant": true
+      "dominant": true,
+      "via": "categories"
     }
   }
 }

@@ -14,9 +14,6 @@
     "comment": ""
   },
   "attributes": {
-    "groups": {
-      "collection": "group"
-    },
     "name": {
       "type": "string",
       "required": true
@@ -25,6 +22,9 @@
       "type": "string",
       "required": true,
       "unique": true
+    },
+    "groups": {
+      "collection": "group"
     }
   }
 }
