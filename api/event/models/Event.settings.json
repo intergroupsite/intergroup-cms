@@ -18,7 +18,7 @@
       "type": "string",
       "maxLength": 140,
       "required": true,
-      "minLength": 25
+      "minLength": 5
     },
     "startDate": {
       "type": "date",
@@ -36,11 +36,6 @@
     "description": {
       "type": "text"
     },
-    "groups": {
-      "collection": "group",
-      "via": "events",
-      "dominant": true
-    },
     "categories": {
       "collection": "category",
       "via": "event"
@@ -48,6 +43,11 @@
     "address": {
       "group": "address",
       "type": "group"
+    },
+    "groups": {
+      "collection": "group",
+      "via": "events",
+      "dominant": true
     }
   }
 }
