@@ -39,6 +39,10 @@
       "default": "alert",
       "minLength": 20,
       "type": "string"
+    },
+    "event": {
+      "model": "event",
+      "via": "groups"
     }
   }
 }
