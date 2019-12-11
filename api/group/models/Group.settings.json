@@ -34,10 +34,13 @@
     "fellowship": {
       "model": "fellowship"
     },
+    "isAlertActive": {
+      "type": "boolean"
+    },
     "alert": {
-      "maxLength": 300,
-      "default": "alert",
-      "minLength": 20,
+      "type": "text"
+    },
+    "url": {
       "type": "string"
     },
     "events": {
