@@ -38,7 +38,8 @@
     },
     "groups": {
       "collection": "group",
-      "via": "event"
+      "via": "events",
+      "dominant": true
     },
     "categories": {
       "collection": "category",

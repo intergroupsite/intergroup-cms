@@ -40,8 +40,8 @@
       "minLength": 20,
       "type": "string"
     },
-    "event": {
-      "model": "event",
+    "events": {
+      "collection": "event",
       "via": "groups"
     }
   }
