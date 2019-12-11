@@ -1,0 +1,52 @@
+{
+  "connection": "default",
+  "collectionName": "events",
+  "info": {
+    "name": "event",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "maxLength": 140,
+      "required": true,
+      "minLength": 25
+    },
+    "startDate": {
+      "type": "date",
+      "required": true
+    },
+    "endDate": {
+      "type": "date",
+      "required": true
+    },
+    "flyer": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "description": {
+      "type": "text"
+    },
+    "groups": {
+      "collection": "group",
+      "via": "event"
+    },
+    "categories": {
+      "collection": "category",
+      "via": "event"
+    },
+    "address": {
+      "group": "address",
+      "type": "group"
+    }
+  }
+}

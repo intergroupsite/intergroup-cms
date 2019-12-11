@@ -23,6 +23,10 @@
       "collection": "group",
       "dominant": true,
       "via": "categories"
+    },
+    "event": {
+      "model": "event",
+      "via": "categories"
     }
   }
 }

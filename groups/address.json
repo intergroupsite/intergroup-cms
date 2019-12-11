@@ -1,0 +1,40 @@
+{
+  "info": {
+    "name": "address",
+    "description": ""
+  },
+  "connection": "default",
+  "collectionName": "groups_addresses",
+  "attributes": {
+    "line1": {
+      "type": "string",
+      "required": true
+    },
+    "line2": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string",
+      "required": true
+    },
+    "zip": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "country": {
+      "enum": [
+        "USA"
+      ],
+      "type": "enumeration"
+    },
+    "state": {
+      "enum": [
+        "NY"
+      ],
+      "required": true,
+      "type": "enumeration"
+    }
+  }
+}
